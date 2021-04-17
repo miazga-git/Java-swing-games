@@ -1,0 +1,2 @@
+Game has some fine functionality, there is possibility to spin the ball (if ball goes to the left and
+it bounces and the racket goes in the opposite direction, the ball changes direction of its flight)
