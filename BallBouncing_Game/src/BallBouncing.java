@@ -69,7 +69,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
         g.fillRect(this.rightxlength, this.rightylength, 25, 100);
         g.setColor(Color.BLUE);
         g.fillRect(this.leftxlength, this.leftylength, 25, 250);
-        this.ballImage = new ImageIcon("enemy.png");
+        this.ballImage = new ImageIcon("ball.png");
         this.ballImage.paintIcon(this, g, this.ballxpos, this.ballypos);
         g.setFont(new Font("Consolas", 0, 20));
         if (!this.ballActivated) {
