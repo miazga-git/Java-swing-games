@@ -68,7 +68,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
         g.setColor(Color.RED);
         g.fillRect(this.rightxlength, this.rightylength, 25, 100);
         g.setColor(Color.BLUE);
-        g.fillRect(this.leftxlength, this.leftylength, 25, 250);
+        g.fillRect(this.leftxlength, this.leftylength, 25, 100);
         this.ballImage = new ImageIcon("ball.png");
         this.ballImage.paintIcon(this, g, this.ballxpos, this.ballypos);
         g.setFont(new Font("Consolas", 0, 20));
@@ -92,7 +92,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
                 this.left = true;
             }
 
-            if (this.ballxpos <= this.leftxlength + 25 && this.ballxpos > this.leftxlength && this.ballypos >= this.leftylength && this.ballypos < this.leftylength + 250) {
+            if (this.ballxpos <= this.leftxlength + 25 && this.ballxpos > this.leftxlength && this.ballypos >= this.leftylength && this.ballypos < this.leftylength + 100) {
                 this.left = false;
                 this.right = true;
             }
@@ -184,9 +184,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
             this.right = false;
             this.ballActivated = true;
 
-            for(int i = 0; i < 100; ++i) {
-                ++this.player2;
-            }
+
         }
 
         if (e.getKeyCode() == 38) {
