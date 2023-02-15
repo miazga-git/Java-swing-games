@@ -12,7 +12,7 @@ public class BrickBreaker extends JPanel implements KeyListener, ActionListener 
 
     private int totalBricks=21;
     private Timer timer;
-    private int delay=1;
+    private int delay=10;
 
     private int playerX=310;//polozenie X paletki
     private int ballposX=120;

@@ -20,7 +20,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
     private int rightxlength;
     private int rightylength;
     private boolean start = true;
-    private int ballxpos = 437;
+    private int ballxpos; //= 437;
     private int ballypos;
     private ImageIcon ballImage;
     private boolean up = false;
@@ -32,7 +32,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
     private boolean ballActivated = true;
     private boolean koniec = false;
     private Timer timer;
-    private int delay = 10;
+    private int delay = 1;
 
     public BallBouncing() {
         this.addKeyListener(this);
@@ -69,7 +69,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
         g.fillRect(this.rightxlength, this.rightylength, 25, 100);
         g.setColor(Color.BLUE);
         g.fillRect(this.leftxlength, this.leftylength, 25, 100);
-        this.ballImage = new ImageIcon("ball.png");
+        this.ballImage = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\BallBouncing_Game\\ball.png");
         this.ballImage.paintIcon(this, g, this.ballxpos, this.ballypos);
         g.setFont(new Font("Consolas", 0, 20));
         if (!this.ballActivated) {
@@ -86,12 +86,12 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
                 this.up = false;
                 this.down = true;
             }
-
+            //tu jest odbijanie piłki przez prawą paletkę
             if (this.ballxpos >= this.rightxlength - 25 && this.ballxpos < this.rightxlength && this.ballypos >= this.rightylength && this.ballypos < this.rightylength + 100) {
                 this.right = false;
                 this.left = true;
             }
-
+            //tu jest odbijanie piłki przez lewą paletkę
             if (this.ballxpos <= this.leftxlength + 25 && this.ballxpos > this.leftxlength && this.ballypos >= this.leftylength && this.ballypos < this.leftylength + 100) {
                 this.left = false;
                 this.right = true;
@@ -104,29 +104,29 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
     public void actionPerformed(ActionEvent e) {
         this.timer.start();
         if (this.up) {
-            this.ballypos -= 8;
+            this.ballypos -= 2;
             this.repaint();
         }
 
         if (this.down) {
-            this.ballypos += 8;
+            this.ballypos += 2;
             this.repaint();
         }
 
         if (this.left) {
-            this.ballxpos -= 8;
+            this.ballxpos -= 2;
             this.repaint();
         }
 
         if (this.right) {
-            this.ballxpos += 8;
+            this.ballxpos += 2;
             this.repaint();
         }
 
         if (this.rightMovesUp) {
             this.start = false;
             if (this.rightylength > 26) {
-                this.rightylength -= 12;
+                this.rightylength -= 6;
             }
 
             this.repaint();
@@ -135,7 +135,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
         if (this.rightMovesDown) {
             this.start = false;
             if (this.rightylength < 500) {
-                this.rightylength += 12;
+                this.rightylength += 6;
             }
 
             this.repaint();
@@ -144,7 +144,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
         if (this.leftMovesUp) {
             this.start = false;
             if (this.leftylength > 26) {
-                this.leftylength -= 12;
+                this.leftylength -= 6;
             }
 
             this.repaint();
@@ -153,7 +153,7 @@ public class BallBouncing extends JPanel implements KeyListener, ActionListener 
         if (this.leftMovesDown) {
             this.start = false;
             if (this.leftylength < 500) {
-                this.leftylength += 12;
+                this.leftylength += 6;
             }
 
             this.repaint();

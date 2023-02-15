@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BallBouncing_Game/BallBouncing_Game.iml" filepath="$PROJECT_DIR$/BallBouncing_Game/BallBouncing_Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BrickBreaker_Game/BrickBreaker_Game.iml" filepath="$PROJECT_DIR$/BrickBreaker_Game/BrickBreaker_Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-swing-games.iml" filepath="$PROJECT_DIR$/.idea/Java-swing-games.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Minesweeper_Game/Minesweeper_Game.iml" filepath="$PROJECT_DIR$/Minesweeper_Game/Minesweeper_Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Snake_Game/Snake_Game.iml" filepath="$PROJECT_DIR$/Snake_Game/Snake_Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TRex_Game/TRex_Game.iml" filepath="$PROJECT_DIR$/TRex_Game/TRex_Game.iml" />
+    </modules>
+  </component>
+</project>

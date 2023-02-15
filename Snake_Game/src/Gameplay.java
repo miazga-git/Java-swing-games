@@ -75,7 +75,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
         g.fillRect(0, 0, 904, 699);
         g.setColor(Color.RED);
         g.drawRect(24, 10, 851, 55);
-        this.titleImage = new ImageIcon("snaketitle.jpg");
+        this.titleImage = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Snake_Game\\snaketitle.jpg");
         this.titleImage.paintIcon(this, g, 25, 11);
         g.setColor(Color.RED);
         g.drawRect(24, 74, 851, 577);
@@ -89,38 +89,38 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
         g.drawString("Length: " + this.lengthofsnake, 780, 50);
         g.setColor(Color.RED);
         g.fillRect(150, 300, 300, 25);
-        this.rightmouth = new ImageIcon("rightmouth.png");
+        this.rightmouth = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Snake_Game\\rightmouth.png");
         this.rightmouth.paintIcon(this, g, this.snakexlength[0], this.snakeylength[0]);
 
         int a;
         for(a = 0; a < this.lengthofsnake; ++a) {
             if (a == 0 && this.right) {
-                this.rightmouth = new ImageIcon("rightmouth.png");
+                this.rightmouth = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Snake_Game\\rightmouth.png");
                 this.rightmouth.paintIcon(this, g, this.snakexlength[a], this.snakeylength[a]);
             }
 
             if (a == 0 && this.left) {
-                this.leftmouth = new ImageIcon("leftmouth.png");
+                this.leftmouth = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Snake_Game\\leftmouth.png");
                 this.leftmouth.paintIcon(this, g, this.snakexlength[a], this.snakeylength[a]);
             }
 
             if (a == 0 && this.down) {
-                this.downmouth = new ImageIcon("downmouth.png");
+                this.downmouth = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Snake_Game\\downmouth.png");
                 this.downmouth.paintIcon(this, g, this.snakexlength[a], this.snakeylength[a]);
             }
 
             if (a == 0 && this.up) {
-                this.upmouth = new ImageIcon("upmouth.png");
+                this.upmouth = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Snake_Game\\upmouth.png");
                 this.upmouth.paintIcon(this, g, this.snakexlength[a], this.snakeylength[a]);
             }
 
             if (a != 0) {
-                this.snakeimage = new ImageIcon("snakeimage.png");
+                this.snakeimage = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Snake_Game\\snakeimage.png");
                 this.snakeimage.paintIcon(this, g, this.snakexlength[a], this.snakeylength[a]);
             }
         }
 
-        this.enemyImage = new ImageIcon("enemy.png");
+        this.enemyImage = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Snake_Game\\enemy.png");
         if (this.enemyxpos[this.xpos] == this.snakexlength[0] && this.enemyypos[this.ypos] == this.snakeylength[0]) {
             ++this.lengthofsnake;
             ++this.score;

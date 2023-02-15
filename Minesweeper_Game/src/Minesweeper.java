@@ -34,7 +34,7 @@ public class Minesweeper extends JPanel implements MouseListener, ActionListener
     private int[] rectypos = {153, 178, 203, 228, 253, 278, 303, 328, 353, 378, 403, 428, 453, 478
             , 503, 528, 553, 578, 603, 628};
 
-    private int numberofbombs = 65;
+    private int numberofbombs = 15;
 
     private Random random = new Random();
     private int xpos;
@@ -177,13 +177,13 @@ public class Minesweeper extends JPanel implements MouseListener, ActionListener
 
     public void paint(Graphics g) {
 
-        bomb = new ImageIcon("bomb.png");//20x22pix
+        bomb = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Minesweeper_Game\\bomb.png");//20x22pix
 
-        flag = new ImageIcon("flag.png");//20x22pix
-        panel = new ImageIcon("panel.png");//24x24pix
-        sadhead = new ImageIcon("sadhead.png");//24x24pix
-        happyhead = new ImageIcon("happyhead.png");//24x24pix
-        chillhead = new ImageIcon("chillhead.png");//24x24pix
+        flag = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Minesweeper_Game\\flag.png");//20x22pix
+        panel = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Minesweeper_Game\\panel.png");//24x24pix
+        sadhead = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Minesweeper_Game\\sadhead.png");//24x24pix
+        happyhead = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Minesweeper_Game\\happyhead.png");//24x24pix
+        chillhead = new ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\Java-swing-games\\Minesweeper_Game\\chillhead.png");//24x24pix
 
 
 
